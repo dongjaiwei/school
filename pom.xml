@@ -42,9 +42,16 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
         <dependency>
-            <groupId>commons_dbcp</groupId>
+            <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
         </dependency>
+        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+            <version>1.5.4</version>
+        </dependency>
+        
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
