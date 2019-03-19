@@ -11,12 +11,12 @@ import java.util.List;
 
 @RestController
 @EnableAutoConfiguration
-@RequestMapping("/testboot")
+@RequestMapping("/api")
 public class TestBootController {
 
     @Autowired
     private UserService userService;
-    @RequestMapping("/getuser")
+    @RequestMapping("/getUser")
     public List<UserInfo> getUser() {
         return userService.findAll();
     }
