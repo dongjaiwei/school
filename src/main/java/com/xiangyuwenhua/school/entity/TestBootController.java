@@ -26,8 +26,8 @@ public class TestBootController {
         return userService.addUser(userInfo);
     }
 
-    @RequestMapping("/addTM")
-    public int addTM(Thermometer thermometer){
+    @RequestMapping("/addThermometer")
+    public int addThermometer(Thermometer thermometer){
        return userService. addThermometer(thermometer);
     }
 

@@ -8,8 +8,8 @@
      useGeneratedKeys="true" keyProperty="id">
       insert into user_info (name, pwd) values (#{name},#{pwd})
     </insert>
-    <insert id="addTM" parameterType="com.xiangyuwenhua.school.entity.Thermometer" useGeneratedKeys="true" keyProperty="id">
-        insert into thermometer (id,t,h,time) value (#{id},#{t},#{h},#{time})
+    <insert id="addThermometer" parameterType="com.xiangyuwenhua.school.entity.Thermometer" useGeneratedKeys="true" keyProperty="id">
+        insert into thermometer (t,h,time) value (#{t},#{h},#{time})
     </insert>
 
 </mapper>

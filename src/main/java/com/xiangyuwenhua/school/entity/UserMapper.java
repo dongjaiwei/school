@@ -9,4 +9,5 @@ public interface UserMapper {
 
     List<UserInfo> findAll();
     int addUser(UserInfo userInfo);
+    int addThermometer(Thermometer thermometer);
 }

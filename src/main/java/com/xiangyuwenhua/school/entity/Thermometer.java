@@ -3,14 +3,13 @@ package com.xiangyuwenhua.school.entity;
 import java.io.Serializable;
 
 public class Thermometer implements Serializable {
-    private static final long serialVersionUID = 7778L;
+    private static final long serialVersionUID = 2L;
     private int id;
     private String t;
     private String h;
     private String time;
 
-    public Thermometer(int id, String t, String h, String time) {
-        this.id = id;
+    public Thermometer(String t, String h, String time) {
         this.t = t;
         this.h = h;
         this.time = time;
