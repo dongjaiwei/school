@@ -7,5 +7,9 @@
     <insert id="addUser" parameterType="com.xiangyuwenhua.school.entity.UserInfo"
      useGeneratedKeys="true" keyProperty="id">
       insert into user_info (name, pwd) values (#{name},#{pwd})
-  </insert>
+    </insert>
+    <insert id="addTM" parameterType="com.xiangyuwenhua.school.entity.Thermometer" useGeneratedKeys="true" keyProperty="id">
+        insert into thermometer (id,t,h,time) value (#{id},#{t},#{h},#{time})
+    </insert>
+
 </mapper>

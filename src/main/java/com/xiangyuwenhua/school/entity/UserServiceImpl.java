@@ -21,6 +21,13 @@ public class UserServiceImpl implements UserService{
        userMapper.addUser(userInfo);
        return  userInfo.getId();
     }
+    @Autowired
+    private ThermometerMapper thermometerMapper;
 
+
+    public int addThermometer(Thermometer thermometer){
+      return thermometerMapper.addThermometer(thermometer);
+    }
 
 }
+
