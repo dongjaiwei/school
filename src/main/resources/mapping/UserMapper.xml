@@ -11,5 +11,8 @@
     <insert id="addThermometer" parameterType="com.xiangyuwenhua.school.entity.Thermometer" useGeneratedKeys="true" keyProperty="id">
         insert into thermometer (t,h,time) value (#{t},#{h},#{time})
     </insert>
+    <select id="getThermometers" parameterType="java.lang.String" resultType="com.xiangyuwenhua.school.entity.Thermometer">
+        select * from thermometer where time BETWEEN ${start} AND ${end}
+    </select>
 
 </mapper>
